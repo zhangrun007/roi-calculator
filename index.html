@@ -6,6 +6,8 @@
 <title>ROI 保本测算器 · 通用版</title>
 <meta name="description" content="电商 ROI 保本测算器：18 项成本要素全手填，实时算毛利率、保本ROI、单均净利、成本结构。">
 <meta name="theme-color" content="#f2f5f9">
+<meta property="og:title" content="ROI 保本测算器 · 通用版">
+<meta property="og:description" content="18 项成本要素全手填，实时算保本 ROI 与单均净利">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
 
 <style>
@@ -24,7 +26,19 @@
   .layout{display:flex;gap:18px;align-items:flex-start;}
   .col-l{flex:1 1 560px;min-width:420px;}
   .col-r{flex:1 1 480px;min-width:400px;position:sticky;top:16px;}
-  @media(max-width:1000px){.layout{flex-direction:column;}.col-r{position:static;width:100%;}.col-l{min-width:0;}}
+  @media(max-width:1000px){.layout{flex-direction:column;}.col-r{position:static;width:100%;min-width:0;}.col-l{min-width:0;}}
+  @media(max-width:560px){
+    body{padding:14px 10px;}
+    h1{font-size:19px;} .sub{font-size:12px;}
+    .kpis{flex-direction:column;gap:8px;}
+    .kpi{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;text-align:left;}
+    .kpi .v{font-size:22px;} .kpi .l{margin-top:0;}
+    .f{flex:1 1 100%;}
+    .card{padding:12px 13px;}
+    td,th{padding:5px 5px;font-size:12px;}
+    .barlist .r .nm{width:70px;font-size:11px;}
+    .barlist .r .vl{width:58px;font-size:11px;}
+  }
 
   .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;
         box-shadow:0 1px 3px rgba(16,24,40,.04),0 1px 2px rgba(16,24,40,.03);}
